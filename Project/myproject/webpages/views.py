@@ -18,7 +18,7 @@ def home(request):
             messages.success(request,'book added')
 
             
-    context={
+    data={
         "books":books
     }
-    return render(request,'webpages/home.html')
+    return render(request,'webpages/home.html',data)
